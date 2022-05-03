@@ -24,7 +24,7 @@ with open('problem set.csv', 'w') as f:
         #check if the URL is reachable
         if contest !=None:
           
-            #for example i only need to scrap div. 2 contests you change it for sure (Div. 1,Div. 2,Div. 3,ACM,ICPC)
+            #for example i only want to scrap div. 2 contests you can change it for sure (Div. 1,Div. 2,Div. 3,ACM,ICPC)
             if "Div. 2" in contest.text:
               
                 for x in soup.find('table', {'class': 'problems'}).find_all('tr')[1:]:
