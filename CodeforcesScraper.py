@@ -37,5 +37,5 @@ with open('problem set.csv', 'w') as f:
                     #Arrange the data to fit the CSV file
                     data=[contest.text,problemLink, problem, solutionsCount]
                    
-                    print(data)
+                    thewriter.writerow(data)
 print("Done")
